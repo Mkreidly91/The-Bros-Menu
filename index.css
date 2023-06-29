@@ -9,7 +9,6 @@ html {
 }
 body {
   margin: 0;
-  overflow: hidden;
 }
 h1,
 h3,
@@ -56,12 +55,14 @@ main {
 
 .main-container {
   margin: auto;
-  border: 1px solid black;
+
   max-width: 77vw;
 }
 
 .item-container-grid {
   padding: 0.6rem;
+  border: 1px solid black;
+  margin-bottom: 3rem;
 }
 
 .item-container-header {
@@ -88,19 +89,6 @@ main {
   font-family: 'Roboto';
   margin-bottom: 1rem;
 }
-
-.item-title {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px dotted rgba(108, 120, 128, 0.5);
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-}
-.item-title p:nth-child(2) {
-  font-size: 0.8rem;
-}
 .item > p {
   font-family: sans-serif;
   color: var(--brosGrey);
@@ -108,4 +96,19 @@ main {
   font-weight: lighter;
   padding: 0.5rem 0;
   opacity: 0.8;
+}
+
+.item-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted rgba(108, 120, 128, 0.5);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.item-title p:nth-child(2) {
+  font-size: 13px;
+  margin-right: 10px;
 }
