@@ -1,0 +1,74 @@
+:root {
+  --brosNavy: #12192c;
+  --brosYellow: #f1ee23;
+}
+html {
+  min-width: 100vh;
+  min-width: 100vw;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+h1,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+#navbar {
+  background-color: var(--brosNavy);
+  /* padding: 10px 20px 10px 20px; */
+  padding: 0.5rem 0 0.5rem 0;
+  width: 100%;
+}
+nav div {
+  margin: auto;
+  display: flex;
+  width: 78%;
+  justify-content: space-between;
+}
+.logo {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+}
+.dropdown-button {
+  width: 53px;
+  background-color: transparent;
+  border: 1px solid #f1ba29;
+  border-radius: 4px;
+  padding: 4px 12px;
+}
+.dropdown-button img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* Main Container */
+
+main {
+  padding: 1.5rem;
+}
+
+.main-container {
+  margin: auto;
+  border: 1px solid black;
+  max-width: 78vw;
+}
+
+.item-container-grid {
+  display: grid;
+  padding: 1rem;
+}
+
+.item-container-header {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--brosYellow);
+  background-color: var(--brosNavy);
+  padding: 15px 20px 15px 20px;
+  letter-spacing: 3px;
+}
