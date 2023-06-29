@@ -1,6 +1,7 @@
 :root {
   --brosNavy: #12192c;
   --brosYellow: #f1ee23;
+  --brosGrey: #6c7880;
 }
 html {
   min-width: 100vh;
@@ -11,6 +12,8 @@ body {
   overflow: hidden;
 }
 h1,
+h3,
+p,
 button {
   margin: 0;
   padding: 0;
@@ -20,13 +23,13 @@ button {
 #navbar {
   background-color: var(--brosNavy);
   /* padding: 10px 20px 10px 20px; */
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 0.6rem 0 0.6rem 0;
   width: 100%;
 }
 nav div {
   margin: auto;
   display: flex;
-  width: 78%;
+  width: 77%;
   justify-content: space-between;
 }
 .logo {
@@ -47,7 +50,6 @@ nav div {
 }
 
 /* Main Container */
-
 main {
   padding: 1.5rem;
 }
@@ -55,20 +57,55 @@ main {
 .main-container {
   margin: auto;
   border: 1px solid black;
-  max-width: 78vw;
+  max-width: 77vw;
 }
 
 .item-container-grid {
-  display: grid;
-  padding: 1rem;
+  padding: 0.6rem;
 }
 
 .item-container-header {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 1.4rem;
+  letter-spacing: 3px;
   color: var(--brosYellow);
+
   background-color: var(--brosNavy);
   padding: 15px 20px 15px 20px;
-  letter-spacing: 3px;
+  margin-bottom: 1.2rem;
+}
+
+.meal {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1rem;
+
+  padding: 10px;
+  text-align: center;
+}
+.item {
+  font-family: 'Roboto';
+  margin-bottom: 1rem;
+}
+
+.item-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted rgba(108, 120, 128, 0.5);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.item-title p:nth-child(2) {
+  font-size: 0.8rem;
+}
+.item > p {
+  font-family: sans-serif;
+  color: var(--brosGrey);
+  font-size: 0.8rem;
+  font-weight: lighter;
+  padding: 0.5rem 0;
+  opacity: 0.8;
 }
