@@ -48,6 +48,23 @@ nav div {
   vertical-align: middle;
 }
 
+.dropdown {
+  margin: 0pxgit;
+  width: 77%;
+  list-style-type: none;
+  font-family: 'Roboto';
+  font-weight: 400;
+  letter-spacing: 4px;
+  transform: scale();
+}
+.dropdown li {
+  padding: 0.5rem 1rem;
+}
+.dropdown li a {
+  text-decoration: none;
+  color: var(--brosYellow);
+}
+
 /* Main Container */
 main {
   padding: 1.5rem;
