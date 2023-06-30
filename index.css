@@ -60,13 +60,13 @@ nav div {
   padding: 0;
   margin: 0 auto;
   height: 0;
-  max-height: 38vh;
   overflow: scroll;
   list-style-type: none;
   font-family: 'Roboto';
   font-weight: 400;
   letter-spacing: 4px;
   transition: height 0.3s linear;
+  transition-delay: 0.1s;
 }
 .dropdown li {
   padding: 8px 0;
@@ -76,9 +76,7 @@ nav div {
   color: var(--brosYellow);
   font-size: 15px;
 }
-.dropdown li a:target {
-  scroll-margin-top: 2rem;
-}
+
 .dropdown li a:hover {
   color: white;
 }
