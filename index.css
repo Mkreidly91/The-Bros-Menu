@@ -4,7 +4,7 @@
   --brosGrey: #6c7880;
 }
 html {
-  min-width: 100vh;
+  min-height: 100vh;
   min-width: 100vw;
 }
 body {
@@ -21,9 +21,12 @@ button {
 /* Navbar */
 
 #navbar {
+  position: sticky;
+  top: 0;
   background-color: var(--brosNavy);
   padding: 0.6rem 0 0.6rem 0;
   width: 100%;
+  z-index: 1;
 }
 
 nav div {
@@ -55,7 +58,7 @@ nav div {
 
 .dropdown {
   padding: 0;
-  margin: auto;
+  margin: 0 auto;
   height: 0;
   max-height: 38vh;
   overflow: scroll;
@@ -73,7 +76,12 @@ nav div {
   color: var(--brosYellow);
   font-size: 15px;
 }
-
+.dropdown li a:target {
+  scroll-margin-top: 2rem;
+}
+.dropdown li a:hover {
+  color: white;
+}
 .dropdown-button:focus + .dropdown {
   height: 38vh;
   transition: height 0.2s linear;
