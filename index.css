@@ -7,6 +7,8 @@ html {
   min-height: 100vh;
   min-width: 100vw;
 }
+/* Resetting some default styles */
+
 body {
   margin: 0;
 }
@@ -96,6 +98,7 @@ main {
 }
 
 /* Items */
+
 .item-container {
   padding: 0.6rem;
   border: 1px solid black;
@@ -150,4 +153,30 @@ main {
   top: 50%;
   transform: translateY(-50%);
   right: 2%;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--brosNavy);
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+footer a {
+  display: block;
+  width: fit-content;
+  font-family: 'Roboto';
+  font-weight: 100;
+  color: var(--brosYellow);
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  padding: 1.2rem 0;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
