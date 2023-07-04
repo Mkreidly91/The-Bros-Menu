@@ -24,6 +24,8 @@ button {
 
 #navbar {
   position: sticky;
+  display: flex;
+  justify-content: center;
   top: 0;
   background-color: var(--brosNavy);
   padding: 0.6rem 0 0.6rem 0;
@@ -31,17 +33,16 @@ button {
   z-index: 1;
 }
 
-nav div {
+.navItems-container {
   position: relative;
-  margin: auto;
   width: 77%;
 }
 
 .logo {
+  position: absolute;
+  transform: translateY(15%);
   width: 40px;
   object-fit: contain;
-  float: left;
-  transform: translateY(15%);
 }
 
 .dropdown-button {
@@ -62,7 +63,8 @@ nav div {
   padding: 0;
   margin: 0 auto;
   height: 0;
-  overflow: scroll;
+  max-height: 300px;
+  overflow-y: scroll;
   list-style-type: none;
   font-family: 'Roboto';
   font-weight: 400;
@@ -139,7 +141,9 @@ main {
 }
 
 .item-title {
-  position: relative;
+  display: flex;
+
+  justify-content: space-between;
   border-bottom: 1px dotted rgba(108, 120, 128, 0.5);
   font-weight: 400;
   text-transform: uppercase;
@@ -148,11 +152,8 @@ main {
 }
 
 .item-title p:nth-child(2) {
-  position: absolute;
   font-size: 13px;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 2%;
+  margin-right: 10px;
 }
 
 /* Footer */
