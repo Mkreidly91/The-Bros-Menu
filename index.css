@@ -6,6 +6,7 @@
 html {
   min-height: 100vh;
   max-width: 100vw;
+  scroll-behavior: auto;
 }
 
 /* Resetting some default styles */
@@ -71,6 +72,12 @@ button {
   transition: height 0.3s linear;
   transition-delay: 0.1s;
 }
+
+.dropdown-button:focus + .dropdown {
+  height: 38vh;
+  transition: height 0.2s linear;
+}
+
 .dropdown li {
   padding: 8px 0;
 }
@@ -83,9 +90,9 @@ button {
 .dropdown li a:hover {
   color: white;
 }
-.dropdown-button:focus + .dropdown {
-  height: 38vh;
-  transition: height 0.2s linear;
+
+:target {
+  scroll-margin-top: 75px;
 }
 
 /* Main Container */
@@ -111,7 +118,6 @@ main {
   font-size: 1.4rem;
   letter-spacing: 3px;
   color: var(--brosYellow);
-
   background-color: var(--brosNavy);
   padding: 15px 20px 15px 20px;
   margin-bottom: 1.2rem;
