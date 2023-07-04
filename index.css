@@ -156,22 +156,20 @@ main {
 
 /* Footer */
 footer {
+  display: flex;
+  justify-content: center;
   background-color: var(--brosNavy);
   position: sticky;
-  width: 100%;
   bottom: 0;
   z-index: 1;
 }
 
 footer a {
-  display: block;
-  width: fit-content;
   font-family: 'Roboto';
   font-weight: 100;
   color: var(--brosYellow);
   text-decoration: none;
   text-align: center;
-  margin: auto;
   padding: 1.2rem 0;
 }
 
